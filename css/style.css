@@ -16,10 +16,11 @@ header {
     list-style: none;
     display: inline;
     padding: 20px;
+    
 }
 .social {
 padding: 15px;
-font-size: 45px;
+font-size: 35px;
 }
 body {
   background-color: #eafbea;
@@ -28,6 +29,7 @@ main {
   background-color: #eafbea;
   min-height: 100%;
   margin-bottom: -100px;
+  vertical-align: middle;
 }
 main::after {
   content: "";
