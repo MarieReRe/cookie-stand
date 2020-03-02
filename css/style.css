@@ -1,0 +1,39 @@
+header {
+  text-align: center;
+  font-size: 20px;
+  list-style: none;
+  display: inline;
+}
+#shipping {
+  height: 25px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-color: #eafbea;
+}
+main {
+  background-color: #eafbea;
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+main::after {
+  content: "";
+  display: block;
+  height: 100px;
+}
+footer {
+  background-color: #eafbea;
+  height: 100px;
+}
+
+#footNav ul li {
+  text-align: center;
+  font-size: 25px;
+  list-style: none;
+  display: inline;
+  padding: 20px;
+  margin-top: 15px;
+}
