@@ -10,6 +10,14 @@ header {
   color: white;
   text-align: center;
 }
+#headNav ul li{
+    text-align: center;
+    font-size: 25px;
+    list-style: none;
+    display: inline;
+    padding: 20px;
+    margin-top: 15px;
+}
 
 body {
   background-color: #eafbea;
