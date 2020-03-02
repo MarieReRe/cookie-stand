@@ -16,9 +16,11 @@ header {
     list-style: none;
     display: inline;
     padding: 20px;
-    margin-top: 15px;
 }
-
+.social {
+padding: 15px;
+font-size: 45px;
+}
 body {
   background-color: #eafbea;
 }
@@ -31,6 +33,14 @@ main::after {
   content: "";
   display: block;
   height: 100px;
+}
+.cookies {
+    width: 30%;
+    padding: 20px;
+    float: inherit;
+}
+.cookieHeader {
+text-align: center;
 }
 footer {
   background-color: #eafbea;
