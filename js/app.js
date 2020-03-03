@@ -112,5 +112,24 @@ function randomCustomers(min, max) {
 
 use in cookie array. to make drier
 */
+// create parent element
+var parentElement = document.getElementById('seattleSales')
 
-//
+
+//Create section: 
+var section = document.createElement('section');
+console.log(section);
+parentElement.appendChild(section);
+
+// Create ul
+var hoursUl = document.createElement('ul');
+article.appendChild(hoursUl);
+//the array
+for (var i = 0; i < hoursSeattle.hours.length; i++ ){
+  //Create li
+  console.log(hoursSeattle.hours);
+  var hoursLi = document.createElement('li');
+  // fill in lists
+  hoursLi.textContent = hoursSeattle.hours[i];
+  hoursUl.appendChild(hoursLi);
+}
