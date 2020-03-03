@@ -23,29 +23,43 @@ Store.prototype.setCustomers = function () {
     }
     this.cookies.push(total);
     console.log(this.cookies);
-},
+}
 
     //DOM elements to render on the page
+    //adding the hours to the top of the table
 
-    Store.prototype.render = function () {
-        console.log(this.minCustomers);
-        var storeTable = document.getElementById('cookie-data');
-        var storeRow = document.createElement('tr');
-        var nameCell = document.createElement('td');
-        nameCell.textContent = this.storeName;
-        storeRow.appendChild(nameCell);
+//create table
+var storeTable = document.getElementById('cookie-data');
+var tableRow = document.createElement('tr');
+var firstCell = document.createElement('td');
+firstCell.textContent ='     ';
+tableRow.appendChild(firstCell);
+for(var i = 0; i < hours.length; i++) {
+    var hoursCell = document.createElement('td');
+    hoursCell.textContent = hours[i];
+    tableRow.appendChild(hoursCell);
+}
+storeTable.appendChild(tableRow);
 
-        for (var i = 0; i < this.cookies.length; i++) {
-            var cookieCell = document.createElement('td');
-            cookieCell.textContent = this.cookies[i];
-            storeRow.appendChild(cookieCell);
-        }
+Store.prototype.render = function () {
+    console.log(this.minCustomers);
+   
+    var storeRow = document.createElement('tr');
+    var nameCell = document.createElement('td');
+    nameCell.textContent = this.storeName;
+    storeRow.appendChild(nameCell);
 
-       
-        storeTable.appendChild(storeRow);
+    for (var i = 0; i < this.cookies.length; i++) {
+        var cookieCell = document.createElement('td');
+        cookieCell.textContent = this.cookies[i];
+        storeRow.appendChild(cookieCell);
+    }
 
 
-    };
+    storeTable.appendChild(storeRow);
+
+
+};
 
 var seattle = new Store('seattle', 23, 65, 6.3);
 var tokyo = new Store('tokyo', 3, 24, 1.2);
