@@ -79,8 +79,33 @@ for (var i = 0; i < storeLocations.length; i++) {
     storeLocations[i].setCustomers();
     storeLocations[i].render();
 }
+
+//create the footer
+var tableFooter = document.createElement('tr');
+
+//create first row
+var totalRow = document.createElement('td');
+totalRow.textContent = 'Total';
+tableFooter.appendChild(totalRow);
+
+//hourly total disaster
+var hourTotal = 0;
+for(var i = 0; i < hours.length; i++){
+    hourTotal = 0;
+for(var x = 0; x <storeLocations.length; x++){
+hourTotal += storeLocations[x].cookies[i];
+}
+var tableData = document.createElement('td');
+tableData.textContent = hourTotal;
+tableFooter.appendChild(tableData);
+}
+
+//append table footer to table
+storeTable.appendChild(tableFooter);
+
+
 console.log(storeLocations);
-//seattle.render();
+
 
 
 
