@@ -10,17 +10,16 @@ header {
   color: white;
   text-align: center;
 }
-#headNav ul li{
-    text-align: center;
-    font-size: 25px;
-    list-style: none;
-    display: inline;
-    padding: 20px;
-    
+#headNav ul li {
+  text-align: center;
+  font-size: 25px;
+  list-style: none;
+  display: inline;
+  padding: 20px;
 }
 .social {
-padding: 15px;
-font-size: 35px;
+  padding: 15px;
+  font-size: 35px;
 }
 body {
   background-color: #eafbea;
@@ -37,23 +36,25 @@ main::after {
   height: 100px;
 }
 .cookies {
-    width: 30%;
-    padding: 20px;
-    float: inherit;
+  width: 30%;
+  padding: 20px;
+  float: inherit;
 }
 .cookieHeader {
-text-align: center;
+  text-align: center;
 }
 footer {
-  background-color: #eafbea;
   height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 #footNav ul li {
-  text-align: center;
   font-size: 25px;
   list-style: none;
   display: inline;
   padding: 20px;
-  margin-top: 15px;
 }

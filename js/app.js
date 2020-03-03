@@ -112,3 +112,5 @@ function randomCustomers(min, max) {
 
 use in cookie array. to make drier
 */
+
+//
