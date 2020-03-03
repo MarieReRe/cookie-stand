@@ -1,6 +1,6 @@
 'use strict';
 console.log('Hey these salmon cookies are pretty good.');
-var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm']
+var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var seattleLocation = {
     minCustomers: 23,
     maxCustomers: 65,
@@ -10,7 +10,7 @@ var seattleLocation = {
     setCustomers: function () {
         var total = 0;
         for (var i = 0; i < hours.length; i++) {
-            var hourly = randomCustomers(this.minCustomers, this.maxCustomers) * this.avgCookies;
+            var hourly = Math.floor(randomCustomers(this.minCustomers, this.maxCustomers) * this.avgCookies);
             this.cookies.push(`${hours[i]}: ${hourly}`);
             total += hourly;
         }
@@ -29,7 +29,7 @@ var tokyoLocation = {
     setCustomers: function () {
         var total = 0;
         for (var i = 0; i < hours.length; i++) {
-            var hourly = randomCustomers(this.minCustomers, this.maxCustomers) * this.avgCookies;
+            var hourly = Math.floor(randomCustomers(this.minCustomers, this.maxCustomers) * this.avgCookies);
             this.cookies.push(`${hours[i]}: ${hourly}`);
             total += hourly;
         }
@@ -48,7 +48,7 @@ var dubaiLocation = {
     setCustomers: function () {
         var total = 0;
         for (var i = 0; i < hours.length; i++) {
-            var hourly = randomCustomers(this.minCustomers, this.maxCustomers) * this.avgCookies;
+            var hourly = Math.floor(randomCustomers(this.minCustomers, this.maxCustomers) * this.avgCookies);
             this.cookies.push(`${hours[i]}: ${hourly}`);
             total += hourly;
         }
@@ -68,7 +68,7 @@ var parisLocation = {
     setCustomers: function () {
         var total = 0;
         for (var i = 0; i < hours.length; i++) {
-            var hourly = randomCustomers(this.minCustomers, this.maxCustomers) * this.avgCookies;
+            var hourly = Math.floor(randomCustomers(this.minCustomers, this.maxCustomers) * this.avgCookies);
             this.cookies.push(`${hours[i]}: ${hourly}`);
             total += hourly;
         }
@@ -87,7 +87,7 @@ var limaLocation = {
     setCustomers: function () {
         var total = 0;
         for (var i = 0; i < hours.length; i++) {
-            var hourly = randomCustomers(this.minCustomers, this.maxCustomers) * this.avgCookies;
+            var hourly = Math.floor(randomCustomers(this.minCustomers, this.maxCustomers) * this.avgCookies);
             this.cookies.push(`${hours[i]}: ${hourly}`);
             total += hourly;
         }
@@ -113,23 +113,67 @@ function randomCustomers(min, max) {
 use in cookie array. to make drier
 */
 // create parent element
-var parentElement = document.getElementById('seattleSales')
-
-
-//Create section: 
-var section = document.createElement('section');
-console.log(section);
-parentElement.appendChild(section);
-
-// Create ul
-var hoursUl = document.createElement('ul');
-article.appendChild(hoursUl);
-//the array
-for (var i = 0; i < hoursSeattle.hours.length; i++ ){
-  //Create li
-  console.log(hoursSeattle.hours);
-  var hoursLi = document.createElement('li');
-  // fill in lists
-  hoursLi.textContent = hoursSeattle.hours[i];
-  hoursUl.appendChild(hoursLi);
+var parentElement = document.getElementById('seattle');
+//create variable
+for(var i = 0; i < seattleLocation.cookies.length; i++){
+    var seattleLi = document.createElement('li');
+    seattleLi.textContent =seattleLocation.cookies[i];
+    parentElement.appendChild(seattleLi);
 }
+
+var parentElement = document.getElementById('tokyo');
+//create variable
+for(var j = 0; j <tokyoLocation.cookies.length; j++){
+    var tokyoLi = document.createElement('li');
+    tokyoLi.textContent =tokyoLocation.cookies[j];
+    parentElement.appendChild(tokyoLi);
+
+}
+
+var parentElement = document.getElementById('dubai');
+//create variable
+for(var k = 0; k <dubaiLocation.cookies.length; k++){
+    var dubaiLi = document.createElement('li');
+    dubaiLi.textContent =dubaiLocation.cookies[k];
+    parentElement.appendChild(dubaiLi);
+
+}
+
+var parentElement = document.getElementById('paris');
+//create variable
+for(var l = 0; l < parisLocation.cookies.length; l++){
+    var parisLi = document.createElement('li');
+    parisLi.textContent =parisLocation.cookies[l];
+    parentElement.appendChild(parisLi);
+
+}
+
+var parentElement = document.getElementById('lima');
+//create variable
+for(var m = 0; m <limaLocation.cookies.length; m++){
+    var limaLi = document.createElement('li');
+    limaLi.textContent =limaLocation.cookies[m];
+    parentElement.appendChild(limaLi);
+
+}
+
+
+
+
+
+
+
+
+
+// // Create ul
+// var hoursUl = document.createElement('ul');
+// article.appendChild(hoursUl);
+// //the array
+// for (var i = 0; i < hoursSeattle.hours.length; i++) {
+//     //Create li
+//     console.log(hoursSeattle.hours);
+//     var hoursLi = document.createElement('li');
+//     // fill in lists
+//     hoursLi.textContent = hoursSeattle.hours[i];
+//     hoursUl.appendChild(hoursLi);
+// }
