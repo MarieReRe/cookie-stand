@@ -122,4 +122,3 @@ console.log(storeLocations);
 
 
 
-// var
