@@ -63,35 +63,65 @@ footer {
 
 #div1 {
   height: 300px;
-  width: 1000px;
-  padding: 50px;
+  width: 2000px;
+  padding: 100px;
+  margin-bottom: 50px;
 }
 
 .seattleLocation {
-  height: 200px;
-  width: 400px;
-  padding: 50px;
+  height: 300px;
+  width: 200px;
+  padding: 70px;
   float: left;
-  margin: auto;
+ 
 }
 
-.seattleP {
-}
 .parisLocation {
-  height: 200px;
-  width: 400px;
-  padding: 50px;
-  float: right;
-  margin: auto;
+  height: 300px;
+  width: 200px;
+  padding: 70px;
+  float: left;
+
 }
 
+.tokyoLocation {
+  height: 300px;
+  width: 200px;
+  padding: 70px;
+  float: left;
+
+}
 #div2 {
   height: 300px;
   width: 1000px;
-  padding: 50px;
+  padding: 200px;
+ 
 }
-#div3 {
+
+.dubaiLocation {
   height: 300px;
-  width: 1000px;
-  padding: 50px;
+  width: 200px;
+  padding: 70px;
+  float: left;
+ 
+}
+.limaLocation {
+  height: 300px;
+  width: 200px;
+  padding: 70px;
+  float: left;
+
+}
+.franchiseLocation {
+  height: 300px;
+  width: 200px;
+  padding: 70px;
+  float: left;
+  
+}
+h3 {
+  text-align: center;
+}
+p {
+  text-align: center;
 }
