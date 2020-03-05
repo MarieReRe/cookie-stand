@@ -25,16 +25,16 @@ Store.prototype.setCustomers = function () {
     console.log(this.cookies);
 }
 
-    //DOM elements to render on the page
-    //adding the hours to the top of the table
+//DOM elements to render on the page
+//adding the hours to the top of the table
 
 //create table
 var storeTable = document.getElementById('cookie-data');
 var tableRow = document.createElement('tr');
 var firstCell = document.createElement('td');
-firstCell.textContent ='     ';
+firstCell.textContent = '     ';
 tableRow.appendChild(firstCell);
-for(var i = 0; i < hours.length; i++) {
+for (var i = 0; i < hours.length; i++) {
     var hoursCell = document.createElement('td');
     hoursCell.textContent = hours[i];
     tableRow.appendChild(hoursCell);
@@ -43,7 +43,7 @@ storeTable.appendChild(tableRow);
 
 Store.prototype.render = function () {
     console.log(this.minCustomers);
-   
+
     var storeRow = document.createElement('tr');
     var nameCell = document.createElement('td');
     nameCell.textContent = this.storeName;
@@ -90,29 +90,54 @@ tableFooter.appendChild(totalRow);
 
 //hourly total disaster
 var hourTotal = 0;
-for(var i = 0; i < hours.length; i++){
+for (var i = 0; i < hours.length; i++) {
     hourTotal = 0;
-for(var x = 0; x <storeLocations.length; x++){
-hourTotal += storeLocations[x].cookies[i];
-}
-var tableData = document.createElement('td');
-tableData.textContent = hourTotal;
-tableFooter.appendChild(tableData);
+    for (var x = 0; x < storeLocations.length; x++) {
+        hourTotal += storeLocations[x].cookies[i];
+    }
+    var tableData = document.createElement('td');
+    tableData.textContent = hourTotal;
+    tableFooter.appendChild(tableData);
 }
 
 //append table footer to table
 storeTable.appendChild(tableFooter);
-
-
 console.log(storeLocations);
 
 
 
+//take in event parameter so that we can prevent the default
+function handleFormSubmitted(event){
+    event.preventDefault();
+    console.log(event);
+
+
+    var NameInput = document.getElementById('name');
+    var nameValue = NameInput['value'];
+
+    var addressInput = document.getElementById('address');
+    var addressValue = addressInput['value'];
+
+    var homePhoneInput = document.getElementById('home-phone');
+    var homePhoneValue = homePhoneInput['value'];
+
+
+    // //add check box values if you have that
+    // var isAmerican =
+    // var hasVisa =
+    // var speaksEnglish =
+    
+}
 
 
 
+//Set up the event listener
+//1. which element do we need?
+var formElement = document.getElementById('new-employee');
 
-
+//2. which event am i listening for
+//3 what code should i run when that event happens?
+formElement.addEventListener('submit', handleFormSubmitted);
 
 
 
