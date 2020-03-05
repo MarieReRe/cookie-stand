@@ -44,6 +44,8 @@ main::after {
   text-align: center;
 }
 footer {
+  background-color: coral;
+  color: #ffffff;
   height: 100px;
   position: absolute;
   bottom: 0;
