@@ -1,8 +1,12 @@
+*{
+  box-sizing: border-box;
+}
 header {
   text-align: center;
   font-size: 20px;
   list-style: none;
-  display: inline;
+  display: inline-block;
+  width: 100%;
 }
 #shipping {
   height: 25px;
@@ -22,18 +26,16 @@ header {
   font-size: 35px;
 }
 body {
-  background-color: #eafbea;
+  background-color:#FFFFE0;
+  height: 1000px;
+  width: auto;
+  padding: 100px;
 }
 main {
-  background-color: #eafbea;
+  background-color: #FFFFE0;
   min-height: 100%;
   margin-bottom: -100px;
   vertical-align: middle;
-}
-main::after {
-  content: "";
-  display: block;
-  height: 100px;
 }
 .cookies {
   width: 30%;
@@ -44,19 +46,48 @@ main::after {
   text-align: center;
 }
 footer {
-  background-color: coral;
-  color: #ffffff;
+  background-color: blue;
   height: 100px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
+  margin-top: auto;
 }
 
 #footNav ul li {
   font-size: 25px;
   list-style: none;
-  display: inline;
+  display: inline-block;
   padding: 20px;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+
+/*-----------------------Location Styling----------------------*/
+
+#div1 {
+  height: 300px;
+  width: 2000px;
+  padding: 200px;
+  margin-bottom: 50px;
+}
+
+.location {
+  height: 300px;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+h3 p img{
+  text-align: center;
+}
+
+.fam {
+  margin: auto;
+  padding: 100px;
+
 }

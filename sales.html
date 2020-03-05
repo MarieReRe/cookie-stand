@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/salesstyle.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,11 +17,14 @@
     </section>
     <nav id="headNav">
       <ul>
-        <li><a href="index.html">Homepage</a></li>
-        <li>Employees</li>
-        <li>Employee Handbook</li>
-        <li>Suppliers</li>
-        <li>Upcoming Events</li>
+        <li><a href="index.html"> Home</a></li>
+        <li> <a href="locations.html">Locations</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="gifts.html">Gifts</a></li>
+        <li><a href="recipe.html"> Recipes</a></li>
+        <li><a href="classes.html"> Classes</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="employee.html">Employee Form</a></li>
       </ul>
     </nav>
   </header>
@@ -42,18 +45,36 @@
     <li>Jessa Parks</li>
     <li>jparks@salmoncookie.com</li>
     <li>(555)-555-555</li>
-    <li>456 Tokyo Way, Tokyo, Japam, 55555 </li>
+    <li>456 Tokyo Way, Tokyo, Japan, 55555 </li>
     <li>Hours of Operation: 6am - 8pm</li>
   </ul>
 </section>
 
+<form id="newStore">
+  <fieldset>
+  <legend>New Store Form</legend>
+  <label for="storeName">New Store Name</label>
+  <input id="storeName" type="text" required/>
+  <label for="minCustomers">Minumum Customers</label>
+  <input id="minCustomers" type="text" required/>
+  <label for="maxCustomers">Maximum Customers</label>
+  <input id="maxCustomers" type="text" required/>
+  <label for="avgCookies">Average Cookies Per Customer</label>
+  <input id="avgCookies" type="text" required/>
+  </fieldset>
+  
+  <button>Submit</button>
+    </form>
+
+
   <table id="cookie-data">
-    <thead>
-      <tr>
-
-      </tr>
-
+    <thead id = "hoursOpen">
+      
     </thead>
+    <tbody id="storeData">
+
+    </tbody>
+    <tfoot id="storeTotal"></tfoot>
   </table>
   <script src="app2.js"></script>
 
