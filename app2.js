@@ -131,8 +131,6 @@ function handleFormSubmitted(event) {
 
 }
 
-
-
 //Set up the event listener
 //1. which element do we need?
 var formElement = document.getElementById('newStore');
@@ -140,13 +138,3 @@ var formElement = document.getElementById('newStore');
 //2. which event am i listening for
 //3 what code should i run when that event happens?
 formElement.addEventListener('submit', handleFormSubmitted);
-
-
-
-
-
-
-
-
-
-// var
