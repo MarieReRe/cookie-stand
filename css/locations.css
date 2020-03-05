@@ -58,4 +58,12 @@ header {
     display: inline;
     padding: 20px;
   }
+
+
+  #div1 {
+      height: 50px;
+      width: 100px;
+      padding: 50px;
+      float: left;
+  }
   
