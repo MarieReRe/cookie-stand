@@ -45,18 +45,36 @@
     <li>Jessa Parks</li>
     <li>jparks@salmoncookie.com</li>
     <li>(555)-555-555</li>
-    <li>456 Tokyo Way, Tokyo, Japam, 55555 </li>
+    <li>456 Tokyo Way, Tokyo, Japan, 55555 </li>
     <li>Hours of Operation: 6am - 8pm</li>
   </ul>
 </section>
 
+<form id="newStore">
+  <fieldset>
+  <legend>New Store Form</legend>
+  <label for="storeName">New Store Name</label>
+  <input id="storeName" type="text" required/>
+  <label for="minCustomers">Minumum Customers</label>
+  <input id="minCustomers" type="text" required/>
+  <label for="maxCustomers">Maximum Customers</label>
+  <input id="maxCustomers" type="text" required/>
+  <label for="avgCookies">Average Cookies Per Customer</label>
+  <input id="avgCookies" type="text" required/>
+  </fieldset>
+  
+  <button>Submit</button>
+    </form>
+
+
   <table id="cookie-data">
-    <thead>
-      <tr>
-
-      </tr>
-
+    <thead id = "hoursOpen">
+      
     </thead>
+    <tbody id="storeData">
+
+    </tbody>
+    <tfoot id="storeTotal"></tfoot>
   </table>
   <script src="app2.js"></script>
 

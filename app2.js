@@ -29,7 +29,7 @@ Store.prototype.setCustomers = function () {
 //adding the hours to the top of the table
 
 //create table
-var storeTable = document.getElementById('cookie-data');
+var storeTable = document.getElementById('hoursOpen');
 var tableRow = document.createElement('tr');
 var firstCell = document.createElement('td');
 firstCell.textContent = '     ';
@@ -43,9 +43,10 @@ storeTable.appendChild(tableRow);
 
 Store.prototype.render = function () {
     console.log(this.minCustomers);
-
+var storeData = document.getElementById('storeData');
     var storeRow = document.createElement('tr');
     var nameCell = document.createElement('td');
+    
     nameCell.textContent = this.storeName;
     storeRow.appendChild(nameCell);
 
@@ -56,8 +57,8 @@ Store.prototype.render = function () {
     }
 
 
-    storeTable.appendChild(storeRow);
-
+    storeData.appendChild(storeRow);
+    
 
 };
 
@@ -66,6 +67,7 @@ var tokyo = new Store('tokyo', 3, 24, 1.2);
 var dubai = new Store('dubai', 11, 38, 3.7);
 var paris = new Store('paris', 20, 38, 2.3);
 var lima = new Store('lima', 2, 16, 4.6);
+
 
 var storeLocations = [seattle, tokyo, dubai, paris, lima];
 // //adding the hours to the top of the table
@@ -77,63 +79,63 @@ var storeLocations = [seattle, tokyo, dubai, paris, lima];
 //loop through objects
 for (var i = 0; i < storeLocations.length; i++) {
     storeLocations[i].setCustomers();
-    storeLocations[i].render();
+    storeLocations[i].render(); 
 }
+getTotalRow();
 
-//create the footer
-var tableFooter = document.createElement('tr');
 
-//create first row
-var totalRow = document.createElement('td');
-totalRow.textContent = 'Total';
-tableFooter.appendChild(totalRow);
-
-//hourly total disaster
-var hourTotal = 0;
-for (var i = 0; i < hours.length; i++) {
-    hourTotal = 0;
-    for (var x = 0; x < storeLocations.length; x++) {
-        hourTotal += storeLocations[x].cookies[i];
+function getTotalRow(){
+    var table = document.getElementById('cookie-data');
+    var previousFooter = document.getElementById('storeTotal');
+  previousFooter.parentNode.removeChild(previousFooter);
+   var tableFooter = document.createElement('tfoot');
+   tableFooter.setAttribute('id', 'storeTotal');
+   table.appendChild(tableFooter);
+    //create first row
+    var totalData= document.createElement('td');
+    totalData.textContent = 'Total';
+    tableFooter.appendChild(totalData);
+    
+    //hourly total disaster
+    var hourTotal = 0;
+    for (var i = 0; i < hours.length; i++) {
+        hourTotal = 0;
+        for (var x = 0; x < storeLocations.length; x++) {
+            hourTotal += storeLocations[x].cookies[i];
+        }
+        var tableData = document.createElement('td');
+        tableData.textContent = hourTotal;
+        tableFooter.appendChild(tableData);
     }
-    var tableData = document.createElement('td');
-    tableData.textContent = hourTotal;
-    tableFooter.appendChild(tableData);
+    
+    
+
 }
-
-//append table footer to table
-storeTable.appendChild(tableFooter);
-console.log(storeLocations);
-
-
 
 //take in event parameter so that we can prevent the default
-function handleFormSubmitted(event){
+function handleFormSubmitted(event) {
     event.preventDefault();
     console.log(event);
 
 
-    var NameInput = document.getElementById('name');
-    var nameValue = NameInput['value'];
+    var storeName = document.getElementById('storeName').value;
+    var minCustomers = document.getElementById('minCustomers').value;
+    var maxCustomers = document.getElementById('maxCustomers').value;
+    var avgCookies = document.getElementById('avgCookies').value;
+    var newStore = new Store(storeName, minCustomers, maxCustomers, avgCookies);
+    newStore.setCustomers();
+    newStore.render();
+    console.log(newStore);
+    storeLocations.push(newStore);
+    getTotalRow();
 
-    var addressInput = document.getElementById('address');
-    var addressValue = addressInput['value'];
-
-    var homePhoneInput = document.getElementById('home-phone');
-    var homePhoneValue = homePhoneInput['value'];
-
-
-    // //add check box values if you have that
-    // var isAmerican =
-    // var hasVisa =
-    // var speaksEnglish =
-    
 }
 
 
 
 //Set up the event listener
 //1. which element do we need?
-var formElement = document.getElementById('new-employee');
+var formElement = document.getElementById('newStore');
 
 //2. which event am i listening for
 //3 what code should i run when that event happens?
