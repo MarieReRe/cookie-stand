@@ -1,72 +1,76 @@
-*{
+* {
   box-sizing: border-box;
 }
 header {
-  width: 100%;
   height: 75px;
   background-color: midnightblue;
   color: mistyrose;
   text-align: center;
+  width: 100%;
   font-size: 20px;
-  list-style: none;
-  display: inline-block;
-  left: 0;
-  top: 0;
-  
-  
-
 }
 
-#headNav ul li {
-  text-align: center;
-  font-size: 25px;
-  list-style: none;
+#headerNav ul li {
+  color: black;
+  font-size: 30px;
   display: inline;
+  text-align: center;
+  padding: 30px;
+  margin: 5px;
+}
+main {
+  text-align: center;
+}
+.cookies{
+  background-color: #0074D9;
+  width: 1000px;
+  height: 1000px;
+  display: inline-block;
   padding: 30px;
 }
-
+h3 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+.locationList li{
+  font-weight: 800;
+  font-size: 20px;
+}
+p{
+  font-size: 15px;
+}
 body {
-  background-color:#FFFFE0;
+  background-color: #ffffe0;
   width: 3000;
   padding: 100px;
 }
- #cafeMenu {
-  float: left;
-}
 #locationInformation {
   float: right;
-}   
-.cookies {
-  width: 30%;
-  padding: 20px;
-  float: inherit;
 }
-.cookieHeader {
-  text-align: center;
-}
+
 footer {
-  background-color: blue;
-  height: 150px;
-  position: fixed ;
-  bottom: 0;
+  background-color: rgb(151, 41, 1);
+  display: inline-block;
+  width: 100%;
   left: 0;
-  right: 0;
-  margin-top:-150px;
+  bottom: 0;
+  height: 150px;
+  position: fixed;
   clear: both;
 }
 
 #footNav ul li {
+  color: black;
+  font-size: 30px;
   text-align: center;
-  font-size: 25px;
-  list-style: none;
-  display: inline-block;
-  padding-top: 20px;
-  margin-top: 10px;
+  display: inline;
+  padding: 30px;
 }
 
 .social {
   padding: 15px;
   font-size: 35px;
+  text-align: center;
 }
 
 /*-----------------------Location Styling----------------------*/
@@ -113,6 +117,5 @@ h3 {
   font-weight: 500px;
   font-style: bold;
 } */
-
 
 /* ---------- HomePage ----------*/
