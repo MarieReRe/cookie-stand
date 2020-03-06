@@ -28,16 +28,10 @@ header {
 body {
   /* background-color:#FFFFE0; */
   height: 1000px;
-  width: 2000px;
+  width: 1000px;
   padding: 100px;
 }
-main {
-  /* background-color: #FFFFE0; */
-  min-height: 100%;
-  margin-bottom: -100px;
-  overflow: auto;
-  padding-bottom: 100px;
-}
+
 .cookies {
   width: 30%;
   padding: 20px;
@@ -118,4 +112,7 @@ h3 {
 /* ---------- HomePage ----------*/
 #cafeMenu {
   float: left;
+}
+#locationInformation {
+  float: right;
 }
