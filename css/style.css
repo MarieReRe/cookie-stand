@@ -26,16 +26,17 @@ header {
   font-size: 35px;
 }
 body {
-  background-color:#FFFFE0;
+  /* background-color:#FFFFE0; */
   height: 1000px;
-  width: auto;
+  width: 2000px;
   padding: 100px;
 }
 main {
-  background-color: #FFFFE0;
+  /* background-color: #FFFFE0; */
   min-height: 100%;
   margin-bottom: -100px;
-  vertical-align: middle;
+  overflow: auto;
+  padding-bottom: 100px;
 }
 .cookies {
   width: 30%;
@@ -47,13 +48,15 @@ main {
 }
 footer {
   background-color: blue;
-  height: 100px;
-  position: fixed;
+  height: 150px;
+  width: 100%;
+  position: relative ;
   bottom: 0;
   left: 0;
   right: 0;
-  text-align: center;
-  margin-top: auto;
+
+  /* margin-top:-250px; */
+  clear: both;
 }
 
 #footNav ul li {
@@ -61,33 +64,58 @@ footer {
   list-style: none;
   display: inline-block;
   padding: 20px;
-  padding-top: 20px;
-  margin-top: 10px;
+  /* padding-top: 20px;
+  margin-top: 10px; */
 }
 
 
 /*-----------------------Location Styling----------------------*/
 
-#div1 {
-  height: 300px;
-  width: 2000px;
-  padding: 200px;
-  margin-bottom: 50px;
+#storeLocationsOne {
+  height: 100px;
+  width: 300px;
+  padding: 30px;
+  float: left;
+ 
+
 }
 
-.location {
+/* .location {
   height: 300px;
   width: 100%;
-  float: left;
+  padding: 30px;
+ 
+} */
+img {
+  width: 400px;
+  display: inline-block;
+  padding: 30px;
   text-align: center;
 }
-
-h3 p img{
-  text-align: center;
+h3 {
+  font-weight: 900;
+  text-align: match-parent;
+  display: inline-block;
 }
-
+/* ---------------------------Family Page--------------------------- */
 .fam {
   margin: auto;
   padding: 100px;
 }
 
+/*--------------Employee Page----------------------*/
+#new-employee {
+  text-align: center;
+  padding: 25px;
+}
+
+#pageTitle {
+  font-weight: 500px;
+  font-style: bold;
+}
+
+
+/* ---------- HomePage ----------*/
+#cafeMenu {
+  float: left;
+}
