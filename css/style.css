@@ -4,21 +4,20 @@
 #page-container {
   position: relative;
   min-height: 200px;
+  
 }
 #content-wrapper {
-  text-align: center;
-  padding-bottom: 375px; /* Footer height so that text does not go behind */
+
+  padding-bottom: 300px; /* Footer height so that text does not go behind */
 }
 
 /*--------------- Header Styling ------------ */
 header {
-  background-color: hotpink;
+  background-color: #FFB6C1;
   height: 100px;
   position: sticky;
-  
 }
 .headerNavBar {
-  
   padding-left: 350px;
   padding-right: 350px;
   overflow: hidden;
@@ -34,13 +33,14 @@ header {
   text-decoration: none;
 }
 .headerNavBar a:hover {
-  background: rgb(245, 157, 157);
+  background: rgb(74, 239, 245);
   color: black;
 }
 
 /*--------------- Body Styling ------------ */
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #FFFFE0;
+  position: relative;
 }
 
 /*--------------- Cookie Section Styling ------------ */
@@ -53,33 +53,38 @@ body {
 }
 
 /*--------------- Loaction Section Styling ------------ */
-.currentLocationsOne {
-  display: inline-block;
-  float: left;
-  color: blue;
-  height: 500px;
-  width: 700px;
-  text-align: center;
-  padding-bottom: 100px;
+.locationsHeader {
+  font-family: "PT Serif", serif;
+  font-size: 35px;
 }
-
+.currentLocations {
+  text-align: center;
+}
+h2 {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 /* ----------------Footer Styling -------------------- */
 footer {
-  background-color: hotpink;
-  height: 2.5rem;
-  position: fixed;
+  height: 75px;
+  position: absolute;
+  right: 0;
   bottom: 0;
-  width: 100%;
-  clear: both;
+  left: 0;
+  padding: 1rem;
+  background-color:#FFB6C1;
+  text-align: center;
 }
 
 .footerNavbar {
   overflow: hidden;
   height: 25px;
   background-color: cornflowerblue;
-  position: fixed; /* Set the navbar to fixed position */
-  bottom: 75; /* Position the navbar at the bottom of the page */
+  left: 0;
+  position: absolute;
+  bottom: 75px; /* Position the navbar at the bottom of the page */
   width: 100%; /* Full width */
 }
 
@@ -96,10 +101,6 @@ footer {
 .socialIcons {
   text-align: center;
   float: left;
-  padding: 30px;
 }
 
-
 /* ----------------Sales Page Styling -------------------- */
-
-
