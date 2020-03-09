@@ -44,8 +44,9 @@ body {
   width: 3000;
   padding: 100px;
 }
-#locationInformation {
-  float: right;
+h1 {
+  font-size: 35px;
+  font-weight: bold;
 }
 
 footer {
@@ -68,54 +69,51 @@ footer {
 }
 
 .social {
-  padding: 15px;
+  float: left;
+  padding: 55px;
   font-size: 35px;
   text-align: center;
 }
 
+
+
 /*-----------------------Location Styling----------------------*/
-
-/* #storeLocationsOne {
-  height: 100px;
-  width: 300px;
-  padding: 30px;
+.seattleLocation {
   float: left;
- 
-
-} */
-
-/* .location {
-  height: 300px;
-  width: 100%;
-  padding: 30px;
- 
-} */
-/* img {
-  width: 400px;
-  display: inline-block;
-  padding: 30px;
-  text-align: center;
+  width: 50%;
+} 
+.parisLocation {
+  float: right;
+  width: 50%;
 }
-h3 {
-  font-weight: 900;
-  text-align: match-parent;
-  display: inline-block;
-} */
+.tokyoLocation {
+  float: left;
+  width: 50%;
+
+}
+.dubaiLocation {
+  float: right;
+  width: 50%;
+
+}
+.limaLocation {
+  float: left;
+  width: 50%;
+
+}
+.franchiseLocation {
+  float: right;
+  width: 50%;
+
+
+}
+
+
+
 /* ---------------------------Family Page--------------------------- */
-/* .fam {
-  margin: auto;
-  padding: 100px;
-} */
+
 
 /*--------------Employee Page----------------------*/
-/* #new-employee {
-  text-align: center;
-  padding: 25px;
-}
 
-#pageTitle {
-  font-weight: 500px;
-  font-style: bold;
-} */
 
 /* ---------- HomePage ----------*/
