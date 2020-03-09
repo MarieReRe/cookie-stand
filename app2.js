@@ -8,9 +8,9 @@ function randomCustomers(min, max) {
 }
 function Store(storeName, minCustomers, maxCustomers, avgCookies) {
     this.storeName = storeName;
-    this.minCustomers = minCustomers;
-    this.maxCustomers = maxCustomers;
-    this.avgCookies = avgCookies;
+    this.minCustomers = parseInt(minCustomers);
+    this.maxCustomers = parseInt(maxCustomers);
+    this.avgCookies = parseInt(avgCookies);
     this.cookies = [];
 }
 
