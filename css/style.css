@@ -4,7 +4,6 @@
 #page-container {
   position: relative;
   min-height: 200px;
-<<<<<<< HEAD
 }
 #content-wrapper {
   padding-bottom: 300px; /* Footer height so that text does not go behind */
@@ -133,54 +132,6 @@ footer {
 }
 
 .footerNavbar a {
-=======
-  
-}
-#content-wrapper {
-
-  padding-bottom: 300px; /* Footer height so that text does not go behind */
-}
-
-/*--------------- Header Styling ------------ */
-header {
-  background-color: #FFB6C1;
-  height: 100px;
-  position: sticky;
-}
-.headerNavBar {
- 
-  padding-left: 350px;
-  padding-right: 350px;
-  overflow: hidden;
-  height: 45px;
-  background-color: #FFB6C1;
-  position: sticky; /* Set the navbar to a position based on users scrolling */
-  top: 105px; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-.headerNavBar a {
-  text-align: center;
-  text-decoration: none;
-  padding: 30px;
-  vertical-align: middle;
-}
-.headerNavBar a:hover {
-  background: rgb(74, 239, 245);
-  color: black;
-}
-
-/*--------------- Body Styling ------------ */
-body {
-  background-color: #FFFFE0;
-  position: relative;
-}
-
-/*--------------- Cookie Section Styling ------------ */
-
-.aboutOurCookies {
-  float: left;
-  background-color: yellow;
->>>>>>> 3ce797ca4d355399f93c64ff40a8cbc647688540
   text-align: center;
   padding: 30px;
   text-decoration: none;
@@ -190,7 +141,6 @@ body {
   color: black;
 }
 
-<<<<<<< HEAD
 .socialIcons {
   text-align: center;
   float: left;
@@ -254,50 +204,3 @@ tr td {
   text-align: center;
   padding: 15px;
 }
-=======
-/*--------------- Loaction Section Styling ------------ */
-.locationsHeader {
-  font-family: "PT Serif", serif;
-  font-size: 35px;
-}
-
-
-/* ----------------Footer Styling -------------------- */
-footer {
-  height: 75px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color:#FFB6C1;
-  text-align: center;
-}
-
-.footerNavbar {
-  overflow: hidden;
-  height: 25px;
-  background-color: cornflowerblue;
-  left: 0;
-  position: absolute;
-  bottom: 75px; /* Position the navbar at the bottom of the page */
-  width: 100%; /* Full width */
-}
-
-.footerNavbar a {
-  text-align: center;
-  padding: 30px;
-  text-decoration: none;
-}
-.footerNavbar a:hover {
-  background: rgb(245, 157, 157);
-  color: black;
-}
-
-.socialIcons {
-  text-align: center;
-  float: left;
-}
-
-/* ----------------Sales Page Styling -------------------- */
->>>>>>> 3ce797ca4d355399f93c64ff40a8cbc647688540
