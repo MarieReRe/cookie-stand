@@ -59,19 +59,7 @@ body {
   font-family: "PT Serif", serif;
   font-size: 35px;
 }
-.currentLocations {
-  text-align: center;
-  width: 700px;
- 
-}
-.firstRowLocations {
-  float: left;
-}
-h2 {
-  font-family: "PT Serif", serif;
-  font-weight: bold;
-  font-size: 20px;
-}
+
 
 /* ----------------Footer Styling -------------------- */
 footer {
