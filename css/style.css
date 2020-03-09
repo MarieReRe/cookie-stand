@@ -1,121 +1,206 @@
 * {
   box-sizing: border-box;
 }
+#page-container {
+  position: relative;
+  min-height: 200px;
+}
+#content-wrapper {
+  padding-bottom: 300px; /* Footer height so that text does not go behind */
+}
+/* ------------ Header Styling ----------- */
+
 header {
+  background-color: #ffffe0;
   height: 75px;
-  background-color: midnightblue;
-  color: mistyrose;
-  text-align: center;
+  position: sticky;
   width: 100%;
-  font-size: 20px;
+}
+.patsLogo {
+  padding-left: 600px;
+}
+.headerNavBar {
+  padding-left: 350px;
+  padding-right: 350px;
+  overflow: hidden;
+  height: 45px;
+  background-color: #ffb6c1;
+  position: sticky; /* Set the navbar to a position based on users scrolling */
+  top: 105px; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.headerNavBar a {
+  text-align: center;
+  text-decoration: none;
+  padding: 30px;
+  vertical-align: middle;
+}
+.headerNavBar a:hover {
+  background: rgb(74, 239, 245);
+  color: black;
 }
 
-#headerNav ul li {
-  color: black;
-  font-size: 30px;
-  display: inline;
-  text-align: center;
-  padding: 30px;
-  margin: 5px;
-}
+/* ------------ Body Styling ---------- */
 main {
+  margin: 0 auto;
+  padding: 200px;
   text-align: center;
 }
-.cookies{
-  background-color: #0074D9;
-  width: 1000px;
-  height: 1000px;
-  display: inline-block;
-  padding: 30px;
-}
-h3 {
-  font-weight: bolder;
-  font-size: 30px;
-}
-.locationList li{
-  font-weight: 800;
-  font-size: 20px;
-}
-p{
-  font-size: 15px;
-}
+
 body {
   background-color: #ffffe0;
   width: 3000;
-  padding: 100px;
-}
-#locationInformation {
-  float: right;
-}
-
-footer {
-  background-color: rgb(151, 41, 1);
-  display: inline-block;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  height: 150px;
-  position: fixed;
-  clear: both;
-}
-
-#footNav ul li {
-  color: black;
-  font-size: 30px;
-  text-align: center;
-  display: inline;
   padding: 30px;
 }
-
-.social {
-  padding: 15px;
+h1 {
+  /* padding: 30px;
+  margin: 0 auto; */
   font-size: 35px;
-  text-align: center;
+  font-weight: bold;
 }
 
 /*-----------------------Location Styling----------------------*/
-
-/* #storeLocationsOne {
-  height: 100px;
-  width: 300px;
-  padding: 30px;
+.seattleLocation {
   float: left;
- 
+  width: 50%;
+}
+.parisLocation {
+  float: right;
+  width: 50%;
+}
+.tokyoLocation {
+  float: left;
+  width: 50%;
+}
+.dubaiLocation {
+  float: right;
+  width: 50%;
+}
+.limaLocation {
+  float: left;
+  width: 50%;
+}
+.franchiseLocation {
+  float: right;
+  width: 50%;
+}
 
-} */
+.hoursOfOperation {
+  font-weight: bold;
+}
 
-/* .location {
-  height: 300px;
+/*------------Cookie About Section--------------------*/
+.aboutTheCookies {
+  float: left;
+  width: 100%;
+  padding: 60px;
+}
+.cookieHeader {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+.cookiePictures {
+  float: left;
+}
+.cookieBlurb {
+  float: right;
+  text-align: center;
+  width: 30%;
+  padding: 30px;
+}
+
+/* ------------ Footer -------------- */
+footer {
+  height: 75px;
+  position: sticky;
   width: 100%;
   padding: 30px;
- 
-} */
-/* img {
-  width: 400px;
-  display: inline-block;
+  background-color: #ffb6c1;
+  text-align: center;
+  clear: both;
+}
+
+.footerNavbar {
+  overflow: hidden;
+  height: 25px;
+  background-color: cornflowerblue;
+  left: 0;
+  position: absolute;
+  bottom: 75px; /* Position the navbar at the bottom of the page */
+  width: 100%; /* Full width */
+}
+
+.footerNavbar a {
+  text-align: center;
   padding: 30px;
-  text-align: center;
+  text-decoration: none;
 }
-h3 {
-  font-weight: 900;
-  text-align: match-parent;
-  display: inline-block;
-} */
-/* ---------------------------Family Page--------------------------- */
-/* .fam {
-  margin: auto;
-  padding: 100px;
-} */
-
-/*--------------Employee Page----------------------*/
-/* #new-employee {
-  text-align: center;
-  padding: 25px;
+.footerNavbar a:hover {
+  background: rgb(245, 157, 157);
+  color: black;
 }
 
-#pageTitle {
-  font-weight: 500px;
-  font-style: bold;
-} */
+.socialIcons {
+  text-align: center;
+  float: left;
+}
+/*--------------Gift Shop Styling ---------------- */
+.patsTshirt {
+  float: left;
+  width: 33%;
+}
 
-/* ---------- HomePage ----------*/
+/*--------------Sales Page Styling ---------------- */
+
+
+/* ------ Form Styling-------------*/
+#newStore {
+  border: solid;
+  background-color: lightsalmon;
+  text-align: center;
+}
+legend {
+  font-size: 30px;
+  text-align: center;
+}
+.topRowForm {
+  width: 100%;
+  float: left;
+}
+.bottomRowForm {
+  width: 100%;
+  float: left;
+}
+button:hover {
+  background: pink;
+  color: black;
+}
+/* ------ Table Styling-------------*/
+
+
+#hoursOpen {
+  border: solid;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  float: left;
+}
+#storeData {
+  border: solid;
+  text-align: center;
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+#storeTotal {
+  border: solid;
+  text-align: center;
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+tr td {
+  text-align: center;
+  padding: 15px;
+}
