@@ -13,10 +13,13 @@
 /* ------------ Header Styling ----------- */
 
 header {
-  background-color: #FFB6C1;
+  background-color: #ffffe0;
   height: 100px;
   position: sticky;
   width: 100%;
+}
+.patsLogo {
+  float: left;
 }
 .headerNavBar {
  
@@ -44,20 +47,19 @@ header {
 
 /* ------------ Body Styling ---------- */
 main {
+  margin: 0 auto;
+  padding: 200px;
   text-align: center;
 }
 
-
-}
-p{
-  font-size: 20px;
-}
 body {
   background-color: #ffffe0;
   width: 3000;
   padding: 100px;
 }
 h1 {
+  /* padding: 30px;
+  margin: 0 auto; */
   font-size: 35px;
   font-weight: bold;
 }
@@ -95,6 +97,27 @@ h1 {
   font-weight: bold;
 }
 
+/*------------Cookie About Section--------------------*/
+.aboutTheCookies {
+  float: left;
+  width: 100%;
+  padding: 60px;
+}
+.cookieHeader {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+.cookiePictures {
+  float: left;
+}
+.cookieBlurb {
+  float: right;
+  text-align: center;
+  width: 30%;
+  padding: 30px;
+}
+
 /* ------------ Footer -------------- */
 footer {
   height: 75px;
@@ -130,3 +153,8 @@ footer {
   text-align: center;
   float: left;
 }
+ /*--------------Gift Shop Styling ---------------- */
+ .patsTshirt {
+   float: left;
+   width: 33%;
+ }
